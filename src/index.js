@@ -11,7 +11,6 @@ const tasks = []
 app.use(express.json())
 
 app.post("/createUser", async (request, response) => {
-
     const { name, email, pass } = request.body
 
     const emailExistente = users.find(user => user.email === email)
@@ -21,7 +20,6 @@ app.post("/createUser", async (request, response) => {
             message: 'email ja existe no cadastro'
         })
     }
-
     const passEncripted = await bcrypt.hash(pass, 9)
 
     const newUser = {
@@ -32,7 +30,6 @@ app.post("/createUser", async (request, response) => {
     }
 
     users.push(newUser)
-
     response.status(201).json({
         message: 'usuario cadastrado', newUser
     })

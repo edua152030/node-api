@@ -1,0 +1,127 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "trabalho-final",
+    "dateExported": "2023-08-24T22:55:47.790Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "6e91e60d-3554-4829-a70c-2c7aa524469e",
+            "colId": "4eba2d03-c6bc-4e66-bf91-3429fd09b340",
+            "containerId": "",
+            "name": "cadastrar-usuario",
+            "url": "localhost:3333/createUser",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-08-23T14:03:11.892Z",
+            "modified": "2023-08-23T18:59:05.393Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"teste\",\n  \"email\": \"eduardo\",\n  \"pass\": \"eduardo\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e8338ccf-86ee-4253-8468-15dfcd621086",
+            "colId": "4eba2d03-c6bc-4e66-bf91-3429fd09b340",
+            "containerId": "",
+            "name": "logar",
+            "url": "localhost:3333/loginUser",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-08-23T14:12:17.525Z",
+            "modified": "2023-08-24T19:22:18.644Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"eduardo@gmail.com.br\",\n  \"pass\": \"eduardo\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f0e87a09-f8ee-4bef-8570-9731c3e0ec19",
+            "colId": "4eba2d03-c6bc-4e66-bf91-3429fd09b340",
+            "containerId": "",
+            "name": "listar usuario",
+            "url": "localhost:3333/listUsers",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-08-23T20:01:25.233Z",
+            "modified": "2023-08-23T20:01:59.807Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "19942d89-7380-4396-9ac5-c7dea69adc4b",
+            "colId": "4eba2d03-c6bc-4e66-bf91-3429fd09b340",
+            "containerId": "",
+            "name": "criar task",
+            "url": "localhost:3333/createTask",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-08-23T20:19:21.637Z",
+            "modified": "2023-08-24T11:29:36.349Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"titulo dois\", \n  \"description\": \"descricao dois tres\",\n  \"userId\": \"25e7eee8-245e-4221-b6c3-f6e229006f4a\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6865af33-c96a-4068-b933-fa51021438e7",
+            "colId": "4eba2d03-c6bc-4e66-bf91-3429fd09b340",
+            "containerId": "",
+            "name": "listar task",
+            "url": "localhost:3333/listTask/25e7eee8-245e-4221-b6c3-f6e229006f4a",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-08-23T20:21:21.111Z",
+            "modified": "2023-08-24T11:29:42.875Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3b888ebd-1817-4bc2-8b30-10489a792a57",
+            "colId": "4eba2d03-c6bc-4e66-bf91-3429fd09b340",
+            "containerId": "",
+            "name": "atualizar task",
+            "url": "localhost:3333/updateTask/b897c00c-f7f9-4b7e-9c19-875b2423c351",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2023-08-23T21:15:03.216Z",
+            "modified": "2023-08-24T11:30:01.172Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"novo titulo alterado\",\n  \"description\": \"nova descricao alterado\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b98e0787-9d32-47ef-aa1c-642cc8a098b6",
+            "colId": "4eba2d03-c6bc-4e66-bf91-3429fd09b340",
+            "containerId": "",
+            "name": "deletar task",
+            "url": "localhost:3333/deleteTask/b897c00c-f7f9-4b7e-9c19-875b2423c351",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-08-24T10:35:24.203Z",
+            "modified": "2023-08-24T11:30:11.562Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
